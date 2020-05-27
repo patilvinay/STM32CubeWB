@@ -133,10 +133,10 @@
  * HW UART
  *****************************************************************************/
 #define CFG_HW_LPUART1_ENABLED                 1
-#define CFG_HW_LPUART1_DMA_TX_SUPPORTED        1
+#define CFG_HW_LPUART1_DMA_TX_SUPPORTED        0
 
 #define CFG_HW_USART1_ENABLED                  1
-#define CFG_HW_USART1_DMA_TX_SUPPORTED         0
+#define CFG_HW_USART1_DMA_TX_SUPPORTED         1
 
 /**
  * LPUART1

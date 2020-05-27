@@ -64,7 +64,7 @@
 #define CFG_IO_CAPABILITY_NO_INPUT_NO_OUTPUT (0x03)
 #define CFG_IO_CAPABILITY_KEYBOARD_DISPLAY   (0x04)
 
-#define CFG_IO_CAPABILITY               CFG_IO_CAPABILITY_NO_INPUT_NO_OUTPUT
+#define CFG_IO_CAPABILITY               CFG_IO_CAPABILITY_DISPLAY_ONLY
 
 /**
  * Define MITM modes
@@ -81,7 +81,7 @@
 #define CFG_SECURE_OPTIONAL            (0x01)
 #define CFG_SECURE_MANDATORY           (0x02)
 
-#define CFG_SC_SUPPORT                 CFG_SECURE_OPTIONAL
+#define CFG_SC_SUPPORT                 CFG_SECURE_NOT_SUPPORTED
 
 /**
  * Define Keypress Notification Support
@@ -474,7 +474,7 @@ typedef enum
  * When both are set to 1,  CFG_DEBUG_TRACE_FULL is selected
  */
 #define CFG_DEBUG_TRACE_LIGHT     1
-#define CFG_DEBUG_TRACE_FULL      0
+#define CFG_DEBUG_TRACE_FULL      1
 
 #if (( CFG_DEBUG_TRACE != 0 ) && ( CFG_DEBUG_TRACE_LIGHT == 0 ) && (CFG_DEBUG_TRACE_FULL == 0))
 #undef CFG_DEBUG_TRACE_FULL
